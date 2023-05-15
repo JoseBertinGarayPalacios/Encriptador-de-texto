@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="logotipo de alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="textArea" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion"> &#9888 Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="botonEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="botonDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensajeDesifrado" cols="20" rows="10" readonly></textarea>
+            <div class="botones2">
+                <button class="botonCopiar" onclick="btnCopiar()">Copiar</button>
+                <button class="botonpreingr" onclick="btnpreingreso()">Pre ingresar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
